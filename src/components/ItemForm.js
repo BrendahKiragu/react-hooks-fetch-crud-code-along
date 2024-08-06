@@ -12,7 +12,7 @@ function handleSubmit(e){
     category:category,
     isInCart: false,
    }
-  fetch("http://localhost:3000/items", {
+  fetch("http://localhost:4000/items", {
     method: "POST",
     headers: {"Content-Type": "application/json"},
     body: JSON.stringify(itemData)

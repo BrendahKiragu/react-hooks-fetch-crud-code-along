@@ -9,7 +9,7 @@ function ShoppingList() {
 
 //making a GET request
  useEffect(()=> {
-  fetch("http://localhost:3000/items")
+  fetch("http://localhost:4000/items")
    .then(res => res.json())
    .then((item)=> setItems(item))
    .catch(error => console.error("Error fetching items:", error));
